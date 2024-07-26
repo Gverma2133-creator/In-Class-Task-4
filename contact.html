@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="structural">
+        <h2>CONTACT</h2>
+		<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <main>
+        <form action="/submit" method="post" id="exampleForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autofocus>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <fieldset>
+                <legend>What section of PROG1245 are you in?</legend>
+                <div>
+                    <input type="radio" id="4" name="sec" value="4" required>
+                    <label for="4">Section 4</label>
+                    <br>
+                    <input type="radio" id="5" name="sec" value="5" required>
+                    <label for="5">Section 5</label>
+                    <br>
+                    <input type="radio" id="8" name="sec" value="8" required>
+                    <label for="8">Section 8</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="help">What do you need help with?</label>
+                <select id="help" name="help" required>
+                    <option value="" selected>Select an option</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="both">Both (HTML & CSS)</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" id="human" name="human" value="true" required>
+                <label for="human">I am a human</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+		<br>
+		
+    </main>
+	 <footer class="structural">
+        <p>&copy; 2024 Guransh Verma</p>
+    </footer>
+    
+</body>
+</html>
